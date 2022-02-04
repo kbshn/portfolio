@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="site-container" id="site-container">
+        <!-- nav -->
+        <nav class="nav-container">
+            <div class="logo-container">
+                <div class="logo-text reversed">KB_ShN</div>
+                <div class="logo-text">KB_ShN</div>
+            </div>
+            <div class="nav hamburger-nav" id="hamburger-nav">
+                <img src="/img/menu-icon.svg" alt="menu" srcset="">
+            </div>
+            <div class="nav list-nav">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact</li>
+                    <select class="language-selector" id="language-selector">
+                        <option value="english">EN</option>
+                        <option value="japanese">JP</option>
+                    </select>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <hr>
+
+        <section class="nav menu hidden" id="popup">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <select class="language-selector-nav" id="language-selector-nav">
+                    <option value="english">EN</option>
+                    <option value="japanese">JP</option>
+                </select>
+            </ul>
+    
+        </section>
+        <script src="index.js"></script>
+        <!-- hero -->
+        <section>
+            <div class="text-container english-text block" id="english-text">
+                <h1>I'm Shunichiro Kobayashi, a web developer based in Musashino, Tokyo.</h1>
+                <h2>My favorite job is to create dynamic and interactive web application 
+                    using JavaScript and the related technological environment for 
+                    client-side development including React.js. I aspire to be 
+                    all-mighty--full stack--challenging myself to work in UI/UX with Figma 
+                    and server-side development using Django, Node.js, and so forth. </h2>
+            </div>
+            <div class="text-container japanese-text hidden" id="japanese-text">
+                <h1>こばやししゅんいちろう。ウェブ開発。拠点は東京武蔵野。</h1>
+                <h2>Javascript中心の技術環境を使ったダイナミックでインタラクティブな
+                    ウェブアプリケーションの制作が好きです。さらに、万能―フルスタック―な
+                    開発者になることをめざしてUI／UX設計やサーバーサイド開発にもチャレンジしています。 </h2>
+            </div>
+        </section>
+        <!-- project -->
+        <section>
+            
+        </section>
+
+        <!-- about -->
+        <section>
+            <div class="text-container english-text block" id="english-text">
+                <h1>ABOUT</h1>
+                <h2>My favorite job is to create dynamic and interactive web application 
+                    using JavaScript and the related technological environment for 
+                    client-side development including React.js. I aspire to be 
+                    all-mighty--full stack--challenging myself to work in UI/UX with Figma 
+                    and server-side development using Django, Node.js, and so forth. </h2>
+            </div>
+            <div class="text-container japanese-text hidden" id="japanese-text">
+                <h1>自己紹介</h1>
+                <h2>Javascript中心の技術環境を使ったダイナミックでインタラクティブな
+                    ウェブアプリケーションの制作が好きです。さらに、万能―フルスタック―な
+                    開発者になることをめざしてUI／UX設計やサーバーサイド開発にもチャレンジしています。 </h2>
+            </div>
+        </section>
+        <!-- contact -->
+        <section class="contact-container">
+            <div>
+                <h1>Get in touch.</h1>
+            </div>
+            <form id="form" class="topBefore">
+		
+                <input id="name" type="text" placeholder="NAME">
+                <input id="email" type="text" placeholder="E-MAIL">
+                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input id="submit" type="submit" value="GO!">
+        
+      </form>         
+        </section>
+    </div>
+</body>
+</html>
+
